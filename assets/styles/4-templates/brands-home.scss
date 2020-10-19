@@ -1,0 +1,59 @@
+.pad-t2 {
+    padding: 2rem 0;
+}
+
+.brands-home {
+    background-color: #004337;
+    .content-wrapper {
+        #marcas-carousel {
+            width: 100%;
+            .slick-track {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+            .slick-prev:before {
+                display: none;
+            }
+            .slick-next:before {
+                display: none;
+            }
+            .post-marcas {
+                // width: 250px;
+                width: 100%;
+                display: flex!important;
+                padding: 1rem 2rem;
+                justify-content: center!important;
+                align-items: center!important;
+                .slider-image-marcas {
+                    max-width: 150px;
+                    margin: 0;
+                }
+                .img-axa {
+                    max-width: 50px;
+                }
+                .img-chica {
+                    max-width: 70px;
+                }
+                @media screen and (max-width:992px) {
+                    display: inline-block!important;
+                    padding: 1rem 1.5rem;
+                    .img-axa {
+                        width: 250px;
+                        align-self: center;
+                    }
+                    .img-chica {
+                        width: 250px;
+                    }
+                }
+            }
+            .centrar {
+                @media screen and (max-width: 992px) {
+                    text-align: center!important;
+                }
+            }
+        }
+    }
+}

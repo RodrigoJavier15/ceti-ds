@@ -1,0 +1,152 @@
+.padd-top {
+    padding: 3rem 0 0 0;
+}
+
+.requisitos-de-contratacion {
+    background-color: #F5F6F7;
+    overflow: hidden;
+    .content-wrapper {
+        max-width: 1100px;
+        .requisitos {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            .categoria-requisitos {
+                width: 50%;
+                label {
+                    font-size: 21px;
+                    font-weight: 700;
+                }
+                p {
+                    text-align: start!important;
+                }
+                ul {
+                    text-align: start!important;
+                    li {
+                        text-align: start!important;
+                    }
+                }
+            }
+            .pad-right {
+                padding: 0 0 0 2rem;
+            }
+            @media screen and (min-width:600px) and (max-width:1500px) {
+                padding: 20px 60px;
+            }
+        }
+        @media screen and (max-width:992px) {
+            .requisitos {
+                flex-direction: column;
+                .pad-right {
+                    padding: 0;
+                }
+                .categoria-requisitos {
+                    width: 100%;
+                    padding: 20px 20px 0;
+                    label {
+                        text-align: start!important;
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.all-brands {
+    background-color: #F5F6F7;
+    #brands {
+        width: 100%;
+        max-width: 1500px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        .post-brands-colectivos-para-empresas,
+        .post-brands-gastos-medicos-mayores,
+        .post-brands-vida-y-retiro,
+        .post-brands-casa-o-empresa,
+        .autos-y-motos,
+        .post-brands {
+            padding: 1rem 2rem;
+            img {
+                margin: 0;
+            }
+            .slider-image-brands {
+                max-width: 150px;
+            }
+            .img-chica {
+                width: 80px;
+            }
+            .img-chica-gastos-medicos-mayores {
+                width: 120px;
+            }
+            .img-axa {
+                width: 50px;
+            }
+            .img-chica-vida-y-retiro {
+                width: 100px;
+            }
+            .img-chica-autos-y-motos {
+                width: 120px;
+            }
+            .img-chica-casa-o-empresa {
+                width: 130px;
+            }
+            .chica {
+                max-width: 70px;
+            }
+        }
+        .post-brands-colectivos-para-empresas {
+            padding: 0rem 2rem;
+        }
+        .post-brands-casa-o-empresa {
+            padding: 0rem 3rem;
+        }
+        .post-brands-vida-y-retiro,
+        .post-brands-gastos-medicos-mayores {
+            padding: 0rem 1.3rem;
+        }
+        .autos-y-motos {
+            padding: 0rem 3.5rem;
+        }
+        @media screen and (min-width:1250px) and (max-width:1500px) {
+            .post-brands-vida-y-retiro,
+            .post-brands-gastos-medicos-mayores {
+                padding: 0rem 4rem;
+            }
+        }
+        @media screen and (min-width:992px) and (max-width:1250px) {
+            .post-brands-vida-y-retiro,
+            .post-brands-gastos-medicos-mayores {
+                padding: 0rem 2.5rem;
+            }
+        }
+        @media screen and (min-width:480px) and (max-width:1200px) {
+            .autos-y-motos {
+                padding: 0rem 1.3rem;
+            }
+            // .post-brands-vida-y-retiro {
+            //     padding: 1rem 2rem;
+            // }
+            .post-brands-casa-o-empresa {
+                padding: 0rem 1.6rem;
+            }
+        }
+        @media screen and (max-width:480px) {
+            justify-content: start;
+            .post-brands {
+                width: 50%;
+                display: flex;
+                justify-content: center;
+                .img-chica-gastos-medicos-mayores,
+                .img-chica-vida-y-retiro,
+                .img-chica-autos-y-motos,
+                .img-chica-casa-o-empresa {
+                    width: 110px;
+                }
+            }
+        }
+    }
+}

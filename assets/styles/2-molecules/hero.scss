@@ -1,0 +1,201 @@
+#hero-index{
+    width: 100%;
+    max-width: 100%;
+    height: 100vh;
+    min-height: 100vh;
+    overflow: hidden;
+    #hero-carousel{
+
+        .hero-slide{
+            width: 100vw;
+            height: 100vh;
+            min-height: 100vh;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            .slider-content{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background-color: rgba($green-bernardi, 0.9);
+                height: 100%;
+                width: 50%;
+
+                @media screen and (max-width: 992px){
+                    width: 100%;
+                }
+                .content{
+                    padding: 6rem 2rem;
+                    max-width: 600px;
+
+                    @media screen and (max-width: 992px){
+                        padding: 4rem 1rem;
+                        max-width: 400px;
+                    }
+
+                    .text-container{
+                        margin-bottom: 2rem;
+                        *{
+                            color: white
+                        }
+                        
+                        .title{
+                            font-size: 18px;
+                            font-weight: 400;
+                        }
+                        .description{
+                            font-size: 42px;
+                            font-weight: bold;
+                        }
+
+                        @media screen and (max-width: 1400px){
+                            margin-left: 4rem;
+                        }
+                        @media screen and (max-width: 992px) {
+                            margin-top: auto;
+                            margin-bottom: 0;
+                            margin-left: 2.5rem;
+
+                            .title{
+                                font-size: 14px;
+                            }
+                            .description{
+                                font-size: 24px;
+                            }
+                        }
+                    }
+                    
+                    .buttons{
+                        display: flex;
+
+                        .btn{
+                            margin: 0;
+                        }
+
+                        .item{
+                            width: 215px;
+
+                            &:first-child{
+                                margin-right: 1rem;
+
+                                @media screen and (max-width: 1400px) {
+                                    margin-right: 0;
+                                    margin-bottom: 1rem;
+                                }
+                            }
+                        }
+
+                        @media screen and (max-width: 1400px) {
+                            flex-direction: column;
+                            align-items: center;
+                        }
+                        @media screen and (max-width: 992px){
+                            margin-top: auto;
+                        }
+                        
+                    }
+                    @media screen and (max-width: 992px){
+                        height: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+
+        .autos-y-motos{
+            background-image: url("../img/Slides/autos-y-motos.jpg");
+        }
+        .colectivo-para-empresas{
+            background-image: url("../img/Slides/colectivo-para-empresas.jpg");
+        }
+        .gastos-medicos-mayores{
+            background-image: url("../img/Slides/gastos-medicos-mayores.jpg");
+        }
+        .residencial-y-empresarial{
+            background-image: url("../img/Slides/residencial-y-empresarial.jpg");
+        }
+        .seguro-de-vida-y-retiro{
+            background-image: url("../img/Slides/seguro-de-vida-y-retiro.jpg");
+        }
+
+        .slick-dots{
+            display: flex;
+            flex-direction: column;
+            top: 0;
+            height: 100%;
+            width: initial;
+            margin-left: 1.5rem;
+            @media screen and (min-width: 2500px) {
+                margin-left: calc(25vw - 300px - 75px);
+            }
+            justify-content: center;
+
+            $button-size: 26px;
+            $dot-size: 16px;
+
+            li{
+                margin: 6px 0;
+                height: $button-size;
+                width: $button-size;
+
+                button{
+                    height: $button-size;
+                    width: $button-size;
+                    border-radius: 50%;
+                    border: 2px solid transparent;
+
+                    &:before{
+                        width: $dot-size;
+                        height: $dot-size;
+                        font-size: $dot-size;
+                        line-height: $dot-size;
+
+                        top: 4px;
+                        left: 3px;
+                        
+                        @media screen and (max-width: 992px){          
+                            top: 3px;
+                            left: 2px;
+                        }
+                    }
+                }
+
+                &.slick-active button{
+                    border: 2px solid white;
+                }
+            }
+
+            @media screen and (max-width: 992px){          
+                $button-size: 18px;
+                $dot-size: 10px;
+                margin-left: 1rem;
+
+                li{
+                    height: $button-size;
+                    width: $button-size;
+    
+                    button{
+                        height: $button-size;
+                        width: $button-size;
+    
+                        &:before{
+                            width: $dot-size;
+                            height: $dot-size;
+                            font-size: $dot-size;
+                            line-height: $dot-size;
+        
+                            top: 3px;
+                            left: 2px;
+
+                        }
+                    }
+                }
+    
+            }
+        }
+    }
+}

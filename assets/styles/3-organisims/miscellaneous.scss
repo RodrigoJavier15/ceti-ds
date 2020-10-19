@@ -1,0 +1,20 @@
+#phone-line-green{
+    padding: 52px 0;
+    background-color: $green-bernardi;
+
+    .content-wrapper{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .title{
+            font-size: 24px;
+            color: #D5D5D5;
+        }
+        .phone-number{
+            font-size: 32px;
+            font-weight: bold;
+            color: white;
+        }
+    }
+}

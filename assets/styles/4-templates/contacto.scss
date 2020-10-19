@@ -1,0 +1,170 @@
+#contacto {
+    .content-wrapper {
+        align-items: center;
+        .contact-form-wrapper {
+            margin-right: 4rem;
+            .title {
+                font-size: 40px;
+                margin-bottom: 30px;
+                text-transform: none;
+                &:after {
+                    margin: 0;
+                    margin-top: 20px;
+                    width: 40px;
+                }
+            }
+            .description {
+                margin-bottom: 40px;
+            }
+            form {
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: row;
+                justify-content: space-between;
+                * {
+                    font-size: 14px;
+                }
+                .input-wrapper {
+                    width: 47.5%;
+                    input,
+                    select {
+                        background-color: #F5F6F7;
+                        border: none;
+                        border-bottom-left-radius: 20px 50%;
+                        border-bottom-right-radius: 20px 50%;
+                        border-top-left-radius: 20px 50%;
+                        border-top-right-radius: 20px 50%;
+                        padding: 0 1rem;
+                        height: 40px;
+                    }
+                    textarea {
+                        background-color: #F5F6F7;
+                        border: none;
+                        padding: 8px 1rem;
+                        min-height: 40px;
+                        resize: vertical;
+                        border-radius: 20px;
+                    }
+                    .select-container {
+                        position: relative;
+                        .chevron {
+                            position: absolute;
+                            right: 1rem;
+                            top: 14px;
+                            color: #838487;
+                        }
+                    }
+                }
+                .send-button {
+                    width: 200px;
+                    margin-top: 40px;
+                    height: 40px;
+                }
+            }
+            .disclaimer {
+                font-size: 12px;
+                a {
+                    color: $green-bernardi;
+                }
+            }
+        }
+        .atention-line-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #F5F6F7;
+            height: 100%;
+            padding: 2rem;
+            .content {
+                border: 5px solid white;
+                padding: 6rem 2rem 2rem 2rem;
+                width: 300px;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                .title {
+                    color: #838487;
+                    font-size: 20px;
+                    text-align: center;
+                }
+                .phone-number {
+                    color: #212121;
+                    font-size: 24px;
+                    font-weight: bold;
+                    text-align: center;
+                    margin: 0;
+                }
+                .decorative-line {
+                    color: #838487;
+                    &:after {
+                        content: "";
+                        height: 3px;
+                        width: 40px;
+                        left: 0;
+                        right: 0;
+                        margin: 3rem auto;
+                        bottom: 0;
+                        background: #838487;
+                        display: block;
+                        z-index: 1;
+                    }
+                }
+                .description {
+                    color: #838487;
+                    font-size: 14px;
+                    text-align: center;
+                    font-weight: bold;
+                    .bigger {
+                        font-size: 25px;
+                    }
+                }
+            }
+        }
+        @media screen and (max-width: 992px) {
+            flex-direction: column;
+            padding: 0;
+            .contact-form-wrapper {
+                margin: 0;
+                margin-bottom: 4rem;
+                padding: 0 1rem;
+                .title {
+                    font-size: 24px;
+                }
+            }
+            .atention-line-wrapper {
+                width: 100%;
+                margin-bottom: 4rem;
+            }
+        }
+        @media screen and (max-width: 600px) {
+            .contact-form-wrapper {
+                form {
+                    .input-wrapper {
+                        width: 100%;
+                        max-width: 100%;
+                    }
+                    .contenido {
+                        display: flex;
+                        flex-direction: column;
+                    }
+                }
+            }
+        }
+        @media screen and (max-width: 375px) {
+            .atention-line-wrapper {
+                .content {
+                    padding: 6rem 1rem 2rem 1rem;
+                    .phone-number {
+                        font-size: 22px;
+                    }
+                    .description {
+                        .bigger {
+                            font-size: 22px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

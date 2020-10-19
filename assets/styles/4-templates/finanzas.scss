@@ -1,0 +1,104 @@
+$color-gray-bernardi: #838487;
+$color-gray-light-bernardi: #AFB1B8;
+$poppins-bold: 900;
+$poppins-medium: 400;
+$poppins-regular: 300;
+$poppins-semibold: 700;
+$font-size-titulo: 35px;
+$font-size-titulo-responsive: 28px;
+.body-finanzas {
+    h2 {
+        text-transform: none!important;
+    }
+    .que-es {
+        overflow: hidden;
+        .content-wrapper {
+            flex-direction: column;
+            .contenido {
+                width: 70%;
+                margin: 0 auto;
+                h1 {
+                    text-align: center;
+                }
+                h1::after {
+                    width: 0;
+                    height: 0;
+                }
+                p {
+                    text-align: center;
+                    color: $color-gray-bernardi;
+                }
+                @media screen and (max-width:992px) {
+                    width: 100%;
+                    padding: 20px 20px;
+                }
+            }
+        }
+    }
+    .finanza-de-fidelidad {
+        flex-direction: column;
+        overflow: hidden;
+        .content-wrapper {
+            max-width: 1100px;
+            flex-direction: column;
+            margin: 0 auto;
+            .contenido {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                border-top: 1px solid #D5D5D5;
+                .conocenos-categoria {
+                    width: 50%;
+                    h2 {
+                        margin-bottom: 16px;
+                        text-align: start!important;
+                    }
+                    p {
+                        text-align: start;
+                        font-weight: $poppins-regular!important;
+                    }
+                    img {
+                        width: 450px;
+                        width: 100%;
+                    }
+                    ul {
+                        margin-bottom: 2rem;
+                        text-align: start!important;
+                        li {
+                            font-weight: $poppins-semibold!important;
+                            text-transform: none;
+                            text-align: start!important;
+                            p {
+                                font-weight: $poppins-medium!important;
+                            }
+                        }
+                    }
+                    .button-cotizar-finanza {
+                        a {
+                            color: white;
+                        }
+                    }
+                }
+                .pad-right {
+                    padding: 3rem 4rem 3rem 0;
+                }
+                .pad-left {
+                    padding: 3rem 0 3rem 2rem;
+                }
+                @media screen and (min-width:600px) and (max-width:1500px) {
+                    padding: 20px 60px;
+                }
+                @media screen and (max-width:992px) {
+                    flex-direction: column;
+                    .conocenos-categoria {
+                        width: 100%;
+                        padding: 20px 20px;
+                        img {
+                            max-width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

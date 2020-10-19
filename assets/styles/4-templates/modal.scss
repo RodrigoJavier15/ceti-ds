@@ -1,0 +1,112 @@
+.modal-container{
+    position: fixed;
+    display: none;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 99999;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(black, 0.7);
+
+    .modal{
+        position: relative;
+        background-color: white;
+        width: 100%;
+        max-width: 800px;
+
+        .modal-content{
+            width: 100%;
+        }
+
+        .close{
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+    }
+    
+    .close-modal {
+        top: 0;
+        position: absolute;
+        right: 39px;
+        // background-color: #fff;
+        width: 30px;
+        height: 30px;
+        border-radius: 49%;
+        z-index: 1;
+        color: white;
+        font-size: 45px;
+    }
+    @media screen and (max-width: 1105px) {
+        .close-modal {
+            right: 0px;
+        }
+    }
+}
+
+.modal-video-content {
+    background-color: black;
+    //box-shadow: $shadow;
+    padding: 2rem;
+    width: 400px;
+    height: 270px;
+    transform: rotateX(0deg);
+    margin-top: 0rem;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    // overflow: auto;
+    //animation: modalContent .35s;
+    .modal-title {
+        font-size: 1.3rem;
+        font-family: 'Oswald';
+    }
+    hr {
+        margin: 2rem 0;
+        width: 80%;
+        background-color: #CC1B6E;
+        border: none;
+        height: 3px;
+    }
+    .modal-text {
+        width: 80%;
+        text-align: center;
+    }
+    .space {
+        margin: 1rem 0;
+    }
+    .send {
+        justify-content: center;
+        margin-top: 1.5rem;
+        input {
+            padding: 13px;
+        }
+    }
+}
+
+.modal-video-content2 {
+    padding: 0;
+    width: 90%;
+    max-width: 1000px;
+    height: auto;
+    iframe {
+        width: 100%;
+        height: 500px;
+    }
+    @media screen and (max-width: 768px) {
+        iframe {
+            height: 255px;
+        }
+    }
+}
+
+.disable {
+    display: none!important;
+}
+

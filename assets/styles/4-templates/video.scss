@@ -1,0 +1,113 @@
+.video-content {
+    width: 100%;
+    min-height: 411px;
+    background-image: url("../img/conocenos.jpg");
+    display: flex;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+    @media screen and (max-width: 2500px) {
+        min-height: 300px;
+    }
+    button {
+        background-color: transparent;
+        border: none;
+        width: fit-content;
+        height: fit-content;
+        i {
+            color: rgba(255, 255, 255, 1);
+            font-size: 10vh;
+            cursor: pointer;
+        }
+    }
+}
+
+.video1-section {
+    background-image: url("../img/conocenos.jpg")!important;
+    // margin-top: 5rem;
+}
+
+.video2-section {
+    // margin-top: 5rem;
+    background-image: url("../img/finanzas/fidelidad-preview.jpg")!important;
+}
+
+.video3-section {
+    // margin-top: 5rem;
+    background-image: url("../img/finanzas/judicial-preview.jpg")!important;
+}
+
+.video4-section {
+    // margin-top: 5rem;
+    background-image: url("../img/finanzas/administrativa-preview.jpg")!important;
+}
+
+.video5-section {
+    // margin-top: 5rem;
+    background-image: url("../img/finanzas/credito-preview.jpg")!important;
+}
+
+.videoGastosMedicos-section {
+    // margin-top: 5rem;
+    background-image: url("../img/previewVideo/GastosMedicosMayores.jpg")!important;
+}
+
+.videoAutosMotos-section {
+    // margin-top: 5rem;
+    background-image: url("../img/previewVideo/Autos_motos.jpg")!important;
+}
+
+.videoCasaEmpresa-section {
+    // margin-top: 5rem;
+    background-image: url("../img/previewVideo/Casa_empresa.jpg")!important;
+}
+
+@media screen and (max-width: 768px) {
+    .modal-dialog {
+        margin-top: 160px;
+    }
+}
+
+// @import "../../styles/vars.scss";
+// @import "../../styles/layout/layout.scss";
+// .video-content {
+//     width: 100%;
+//     min-height: 411px;
+//     background-image: url("../img/conocernos.jpg");
+//     display: flex;
+//     justify-content: center;
+//     background-repeat: no-repeat;
+//     background-position: center;
+//     background-size: cover;
+//     align-items: center;
+//     @media screen and (max-width: 2500px) {
+//         min-height: 300px;
+//     }
+//     button {
+//         background-color: transparent;
+//         border: none;
+//         width: fit-content;
+//         height: fit-content;
+//         i {
+//             color: rgba(255, 255, 255, 1);
+//             font-size: 10vh;
+//             cursor: pointer;
+//         }
+//     }
+// }
+// .video1-section {
+//     background-image: url("../img/conocenos.jpg")!important;
+//     margin-top: -10px;
+//     // margin-top: 5rem;
+// }
+// .video2-section {
+//     // margin-top: 5rem;
+//     background-image: url("../img/finanzas/fidelidad-preview.jpg")!important;
+// }
+// @media screen and (max-width: 768px) {
+//     .modal-dialog {
+//         margin-top: 160px;
+//     }
+// }
